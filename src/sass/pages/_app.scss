@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  z-index: 0;
+  background: radial-gradient(
+    300% 100% at top center,
+    #1b2947 25%,
+    #75517d 100%
+  );
+  width: 100%;
+  overflow-x: hidden;
+}

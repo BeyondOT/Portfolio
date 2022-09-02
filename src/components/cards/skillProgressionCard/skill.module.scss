@@ -1,0 +1,26 @@
+.progressCard {
+  position: relative;
+  text-align: left;
+  margin: 0 0.5rem;
+}
+
+.title {
+  display: inline;
+  left: 0;
+  top: 0;
+}
+
+.percentage {
+  display: inline;
+  position: absolute;
+  right: 0;
+}
+.progressBarWrap {
+  display: flex;
+  background-color: white;
+  width: 100%;
+}
+.progressBar {
+  background-color: var(--clr-blue);
+  padding: 5px;
+}

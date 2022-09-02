@@ -1,0 +1,116 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  justify-content: center;
+  overflow: hidden;
+  gap: 20px;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  justify-content: left;
+  box-shadow: var(--shadow-btm);
+  width: 50px;
+  overflow: hidden;
+
+  .icon {
+    background-color: hsla(var(--clr-light), 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-500);
+    border-radius: 50%;
+    padding: 0.75rem;
+    cursor: pointer;
+  }
+
+  .title {
+    width: 0px;
+    opacity: 0;
+    font-size: var(--fs-300);
+  }
+
+  &:hover {
+    box-shadow: var(--shadow-btm);
+    width: 150px;
+    transition: all 0.2s ease;
+
+    .title {
+      display: block;
+      opacity: 1;
+      width: 100%;
+      color: white;
+    }
+  }
+
+  &:nth-child(1):hover {
+    background: #4267b2;
+
+    .icon {
+      background: #4267b2;
+    }
+  }
+  &:nth-child(2):hover {
+    background: #1da1f2;
+
+    .icon {
+      background: #1da1f2;
+    }
+  }
+  &:nth-child(3):hover {
+    background: #e1306c;
+
+    .icon {
+      background: #e1306c;
+    }
+  }
+}
+
+.toggleButton {
+  color: white;
+  position: fixed;
+  top: 0;
+  font-size: 2rem;
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+  z-index: 9999;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .navbar{
+    margin-left: 0;
+    width: 100%;
+    background-color: hsla(var(--clr-light), 1);
+    transition: transform 0.5s ease-in;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: left;
+
+    &.active{
+      transform: scaleX(1);
+    }
+  }
+  .button,
+  .button:hover {
+    width: 50%;
+
+    .title {
+      position: relative;
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  
+  .toggleButton {
+    display: block;
+  }
+}

@@ -1,0 +1,48 @@
+:root {
+  /* colors */
+  --clr-dark: 230, 35%, 7%;
+  --clr-light: 231, 77%, 90%;
+  --clr-white: 0, 0%, 100%;
+  --clr-blue: #7e5787;
+
+  /* Sizes */
+  --size-xs: 0.5rem;
+  --size-s: 1rem;
+  --size-m: 1.5rem;
+  --size-l: 2rem;
+  --size-xl: 3rem;
+  --size-xxl: 4rem;
+  --size-xxxl: 5rem;
+
+  /* font-sizes */
+  --fs-900: 7.375rem;
+  --fs-800: 5.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.5rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+
+  /* Margins */
+  --margin-xs: var(--size-xs);
+  --margin-s: var(--size-s);
+  --margin-m: var(--size-m);
+
+  /* font-families */
+  --ff-serif: "Bellefair", serif;
+  --ff-sans-cond: "Barlow Condensed", sans-serif;
+  --ff-sans-normal: "Barlow", sans-serif;
+
+  --ff-kalam: "Kalam", cursive;
+  --ff-mali: "Mali", cursive;
+  --ff-dosis: "Dosis", sans-serif;
+  --ff-poiret: "Poiret One", cursive;
+  --ff-comfortaa: "Comfortaa", cursive;
+  --ff-amatic: "Amatic SC", cursive;
+  --ff-gloria: "Gloria Hallelujah", cursive;
+  --ff-yantra: "Yantramanav", sans-serif;
+
+  /* shadows */
+  --shadow-btm: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
