@@ -11,12 +11,12 @@ const Hero = () => {
       >
         <h1>Ashrough</h1>
         <p>
-          Je suis{" "}
+          I am a {" "}
           <Typed
             strings={[
-              "Designer UI/UX",
-              "Développeur Front-End",
-              "Développeur Back-end",
+              "UI/UX Designer",
+              "Front-End Dev",
+              "Back-End Dev",
               "Try-Hard Gamer",
             ]}
             typeSpeed={20}

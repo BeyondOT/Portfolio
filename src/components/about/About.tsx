@@ -1,13 +1,16 @@
+
 import InfoCard from "../cards/infoCard/InfoCard";
-import ProjectCard from "../cards/projectCard/ProjectCard";
 import SkillProgressionCard from "../cards/skillProgressionCard/SkillProgressionCard";
 import styles from "./about.module.scss";
+
+
+import Projects from "../../pages/projets/Projects";
 
 const About = () => {
   return (
     <section className={styles.about} id="about">
       <div className={`${styles.container} container`}>
-        <section className={styles.section}>
+        <section data-aos="fade-up" className={styles.section}>
           <div className={styles.header}>
             <h2>Qui suis-je</h2>
             <p>
@@ -30,7 +33,7 @@ const About = () => {
             </div>
           </ul>
         </section>
-        <section className={styles.section}>
+        <section data-aos="fade-up" className={styles.section}>
           <div className={styles.header}>
             <h2>Skills</h2>
             <p>L'informatique. Ma passion.</p>
@@ -47,17 +50,7 @@ const About = () => {
             <SkillProgressionCard title="Typescript" progression="80%" />
           </div>
         </section>
-        <section className={styles.section}>
-          <div className={styles.header}>
-            <h2>Projets</h2>
-          </div>
-          <div className={styles.projects}>
-            <ProjectCard title="First Project" content="This is my first project. It does this and that."/>
-            <ProjectCard title="Second Project" content="This is my second project. It does this and that."/>
-            <ProjectCard title="Third Project" content="This is my third project. It does this and that."/>
-          </div>
-
-        </section>
+        <Projects />
       </div>
     </section>
   );

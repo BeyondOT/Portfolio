@@ -3,7 +3,26 @@
   --clr-dark: 230, 35%, 7%;
   --clr-light: 231, 77%, 90%;
   --clr-white: 0, 0%, 100%;
-  --clr-blue: #7e5787;
+  --clr-blue: var(--clr-main-dark);
+
+  --clr-odd: var(--clr-blue-500);
+  --clr-main-dark: var(--clr-blue-400);
+  --clr-main-light: var(--clr-blue-300);
+  --clr-accent-dark: var(--clr-cyan);
+  --clr-accent-light: var(--clr-lime-green);
+  --clr-accent-light-hover: var(--clr-lime-green-light);
+
+  /* Color Theme Swatches in HSLA */
+  --clr-blue-200: hsla(208, 53%, 75%, 1);
+  --clr-blue-100: hsla(208, 53%, 100%, 1);
+
+  /* Color Theme Swatches in HSLA */
+  --clr-blue-500: hsla(245, 48%, 38%, 1);
+  --clr-blue-400: hsla(217, 55%, 43%, 1);
+  --clr-blue-300: hsla(199, 64%, 47%, 1);
+  --clr-cyan: hsla(174, 61%, 47%, 1);
+  --clr-lime-green: hsla(153, 77%, 55%, 1);
+  --clr-lime-green-light: hsla(153, 77%, 75%, 1);
 
   /* Sizes */
   --size-xs: 0.5rem;
