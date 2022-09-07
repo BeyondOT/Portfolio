@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+
 
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Comfortaa&family=Dosis&family=Kalam&family=Mali&family=Poiret+One&family=Yantramanav:wght@300&display=swap');
 
@@ -9,8 +9,9 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,span {
   font-weight: 400;
+  /* color: hsla(var(--clr-light), 1); */
 }
 
 h1 {
@@ -42,6 +43,11 @@ p {
 span {
   font-family: var(--ff-yantra);
   font-size: var(--fs-400);
+}
+
+label {
+  font-family: var(--ff-yantra);
+  font-size: var(--fs-300);
 }
 
 

@@ -1,8 +1,10 @@
 @use "../../../sass/abstracts" as *;
-
+.card {
+  --card-url: url(https://wallpapers.com/images/hd/blue-pink-smoke-laptop-18a2f8pp57sag5fm.jpg);
+}
 .card {
   background-size: cover;
-  background-image: url(https://wallpapers.com/images/hd/blue-pink-smoke-laptop-18a2f8pp57sag5fm.jpg);
+  background-image: url(https://wallup.net/wp-content/uploads/2018/09/25/600867-modern-Blender-geometry-square-abstract-cube-blue-purple-CGI.jpg);
   padding: 8rem 0 0;
   color: white;
   height: 100%;
@@ -27,12 +29,12 @@
     flex-direction: column;
     justify-content: flex-start;
   }
-  
+
   .title {
     text-align: left;
     position: relative;
     width: max-content;
-    
+
     &::after {
       content: "";
       position: absolute;
@@ -41,17 +43,17 @@
       bottom: 0;
       width: calc(100% + var(--padding));
       background: var(--clr-accent-light);
-      
+
       transform-origin: left;
       transition: transform 200ms linear;
     }
   }
-  
+
   .content {
     font-size: 1.25rem;
     padding: 0.8rem 0;
   }
-  
+
   .button {
     cursor: pointer;
     align-self: flex-start;
@@ -64,8 +66,8 @@
     padding: 0.5em 1.25em;
     border-radius: 0.25em;
     margin-top: auto;
-    transition: background-color 200ms linear;
     
+
     &:hover {
       background-color: var(--clr-accent-light-hover);
     }
@@ -77,16 +79,16 @@
 }
 @media (hover) {
   .card {
-    .container{
+    .container {
       transform: translateY(70%);
-      transition: transform 500ms ease;  
+      transition: transform 500ms ease;
       & > *:not(.title) {
         opacity: 0;
         transition: opacity 500ms ease;
       }
     }
 
-    .title::after{
+    .title::after {
       transform: scaleX(0);
     }
 

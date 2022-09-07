@@ -4,4 +4,27 @@
   margin-right: auto;
   gap: 1rem;
   max-width: 80rem;
+  padding-bottom: 2rem;
+}
+
+.container {
+  --bg-color: var(--clr-blue-purple-them-2);
+  position: relative;
+  padding-top: 4rem;
+  background-color: var(--bg-color);
+}
+
+.header{
+  color: hsla(var(--clr-light), 1);
+}
+
+.divider {
+  background-color: hsla(var(--clr-light), 1);
+  top: 0;
+  left: 0;
+  fill: var(--bg-color);
+
+  @media (max-width:700px) {
+    display: none;
+  }
 }

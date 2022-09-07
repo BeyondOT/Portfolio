@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  --bg-color: white;
+  --color: black;
+  --font-size: 1rem;
+  .button {
+    background: var(--bg-color);
+    color: var(--color);
+    display: flex;
+    font-size: var(--font-size);
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: var(--shadow-btm);
+    transition-duration: 200ms;
+    transition-property: background, color;
+    transition-timing-function: ease-in;
+
+    &:hover{
+      background: var(--color);
+      color: var(--bg-color);
+    }
+  }
+}

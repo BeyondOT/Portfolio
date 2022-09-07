@@ -1,4 +1,5 @@
 import Typed from "react-typed";
+import SocialLinks from "../socialLinks/SocialLinks";
 import styles from "./hero.module.scss";
 
 const Hero = () => {
@@ -11,7 +12,7 @@ const Hero = () => {
       >
         <h1>Ashrough</h1>
         <p>
-          I am a {" "}
+          I am a{" "}
           <Typed
             strings={[
               "UI/UX Designer",
@@ -25,7 +26,9 @@ const Hero = () => {
             loop
           />
         </p>
-        <div className="socials"></div>
+        <div className={styles.socials}>
+          <SocialLinks />
+        </div>
       </div>
     </section>
   );

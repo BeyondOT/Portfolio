@@ -1,0 +1,49 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name email" "subject subject" "message message";
+  gap: 1rem;
+  width: 100%;
+  background-color: white;
+  padding: 3rem 1rem;
+  & > div{
+    width: 100%;
+  }
+  .name {
+    grid-area: name;
+  }
+  .email {
+    grid-area: email;
+  }
+  .subject {
+    grid-area: subject;
+  }
+  .message {
+    grid-area: message;
+  }
+
+  input, textarea{
+    width: 100%;
+    border: 1px solid var(--clr-main-dark);
+    padding: 10px 12px;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    border-radius: 0.1rem;
+    font-family: var(--ff-yantra);
+    
+    &:focus{
+      border: 1px solid var(--clr-main-light);
+    }
+  }
+
+  textarea{
+    height: 200px;
+    resize: none;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+}

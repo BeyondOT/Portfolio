@@ -1,0 +1,33 @@
+.section {
+  position: relative;
+  padding: 4rem 1rem;
+  --background-color: hsla(var(--clr-light), 1);
+}
+.divider {
+  top: 0;
+  left: 0;
+  fill: var(--background-color);
+  background-color: var(--clr-blue-purple-them-2);
+}
+
+.right, .left{
+  width: 100%;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.contactsvg{
+
+}

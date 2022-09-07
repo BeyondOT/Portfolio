@@ -1,39 +1,33 @@
-import { A11y, Navigation, Pagination, EffectCoverflow } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import ProjectCard from "../../components/cards/projectCard/ProjectCard";
+import { A11y, EffectCoverflow, Navigation, Pagination } from "swiper";
 import "swiper/css/effect-coverflow";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
+import ProjectCard from "../../components/cards/projectCard/ProjectCard";
+import Divider from "../../components/divider/Divider";
 import styles from "./projects.module.scss";
+
 
 const Projects = () => {
   return (
-    <section className="section" data-aos="fade-up">
-      <div className="header">
+    <section className={`${styles.container} section`} data-aos="fade-up">
+      <Divider nameOfClass={styles.divider}/>
+      <div className={`${styles.header} header`}>
         <h2>Projets</h2>
       </div>
       <div className={styles.projects}>
         <Swiper
-         effect={"coverflow"}
           modules={[Navigation, Pagination, A11y, EffectCoverflow]}
           spaceBetween={20}
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
           loop={true}
-          breakpoints= {{
-            990: {slidesPerView: 3},
-            720: {slidesPerView: 2},
+          breakpoints={{
+            990: { slidesPerView: 3 },
+            720: { slidesPerView: 2 },
           }}
-          coverflowEffect={{
-          rotate: 30,
-          stretch: 0,
-          depth: 40,
-          modifier: 1,
-          slideShadows: false,
-        }}
-          
         >
           <SwiperSlide>
             <ProjectCard

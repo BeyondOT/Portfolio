@@ -1,17 +1,16 @@
-
 import InfoCard from "../cards/infoCard/InfoCard";
 import SkillProgressionCard from "../cards/skillProgressionCard/SkillProgressionCard";
 import styles from "./about.module.scss";
 
-
-import Projects from "../../pages/projets/Projects";
+import Divider from "../divider/Divider";
 
 const About = () => {
   return (
     <section className={styles.about} id="about">
+      <Divider nameOfClass={styles.divider} />
       <div className={`${styles.container} container`}>
-        <section data-aos="fade-up" className={styles.section}>
-          <div className={styles.header}>
+        <section data-aos="fade-up" className="section">
+          <div className="header">
             <h2>Qui suis-je</h2>
             <p>
               Je suis étudiant en informatique à l'université de Strasbourg.
@@ -33,8 +32,8 @@ const About = () => {
             </div>
           </ul>
         </section>
-        <section data-aos="fade-up" className={styles.section}>
-          <div className={styles.header}>
+        <section data-aos="fade-up" className="section">
+          <div className="header">
             <h2>Skills</h2>
             <p>L'informatique. Ma passion.</p>
           </div>
@@ -50,7 +49,6 @@ const About = () => {
             <SkillProgressionCard title="Typescript" progression="80%" />
           </div>
         </section>
-        <Projects />
       </div>
     </section>
   );

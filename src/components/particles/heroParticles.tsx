@@ -3,7 +3,10 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { Container, Engine } from "tsparticles-engine";
 
-export function HeroParticles() {
+interface Props{
+  children: HTMLElement
+}
+const HeroParticles:React.FC = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
 
@@ -20,14 +23,23 @@ export function HeroParticles() {
     []
   );
   return (
+
     <Particles
       height="100vh"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
-      style={{ position: "absolute", top: 0, left: 0, right: 0 }}
+      style={{
+        position: "absolute",
+        width: "100%",
+        height: "100%",
+        top: 0,
+        left: 0,
+        right: 0,
+      }}
+      
       options={{
-        fullScreen: { zIndex: -10, enable:false },
+        fullScreen: { zIndex: -1, enable: false },
         fps_limit: 120,
         particles: {
           number: {
@@ -139,5 +151,8 @@ export function HeroParticles() {
         retina_detect: true,
       }}
     />
+    
   );
 }
+
+export default HeroParticles;
