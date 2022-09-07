@@ -3,9 +3,6 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { Container, Engine } from "tsparticles-engine";
 
-interface Props{
-  children: HTMLElement
-}
 const HeroParticles:React.FC = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
