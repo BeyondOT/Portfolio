@@ -1,7 +1,7 @@
 :root {
   /* colors */
   --clr-dark: 230, 35%, 7%;
-  --clr-light: 0, 0%, 98%;
+  --clr-light: 0, 0%, 100%;
   --clr-white: 0, 0%, 100%;
   --clr-blue: var(--clr-main-dark);
 
@@ -13,12 +13,12 @@
   --clr-accent-light: var(--clr-lime-green);
   --clr-accent-light-hover: var(--clr-lime-green-light);
 
-/* Color Theme Swatches in HSLA */
---clr-blue-purple-them-1: hsla(248, 49%, 43%, 1);
---clr-blue-purple-them-2: hsla(237, 96%, 12%, 1);
---clr-blue-purple-them-3: hsla(236, 94%, 7%, 1);
---clr-blue-purple-them-4: hsla(231, 42%, 56%, 1);
---clr-blue-purple-them-5: hsla(225, 96%, 22%, 1);
+  /* Color Theme Swatches in HSLA */
+  --clr-blue-purple-them-1: hsla(248, 49%, 43%, 1);
+  --clr-blue-purple-them-2: hsla(237, 96%, 12%, 1);
+  --clr-blue-purple-them-3: hsla(236, 94%, 7%, 1);
+  --clr-blue-purple-them-4: hsla(231, 42%, 56%, 1);
+  --clr-blue-purple-them-5: hsla(225, 96%, 22%, 1);
 
   /* Color Theme Swatches in HSLA */
   --clr-blue-500: hsla(212, 55%, 30%, 1);
