@@ -4,7 +4,7 @@ import styles from "./hero.module.scss";
 
 const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section id="home" className={styles.hero}>
       <div
         className={`${styles.container} container`}
         data-aos="zoom-int"

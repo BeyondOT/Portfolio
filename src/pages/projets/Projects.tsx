@@ -11,7 +11,7 @@ import styles from "./projects.module.scss";
 
 const Projects = () => {
   return (
-    <section className={`${styles.container} section`} data-aos="fade-up">
+    <section id="projects" className={`${styles.container} section`} data-aos="fade-up">
       <Divider nameOfClass={styles.divider}/>
       <div className={`${styles.header} header`}>
         <h2>Projets</h2>

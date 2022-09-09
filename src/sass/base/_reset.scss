@@ -50,6 +50,10 @@ picture {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input,
 button,
 textarea,
@@ -58,7 +62,8 @@ select {
   outline: none;
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
   outline: none;
   border: 1px solid black;
 }
