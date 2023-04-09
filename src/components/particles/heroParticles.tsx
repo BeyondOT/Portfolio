@@ -3,7 +3,7 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { Container, Engine } from "tsparticles-engine";
 
-const HeroParticles:React.FC = () => {
+const HeroParticles: React.FC = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
 
@@ -20,7 +20,6 @@ const HeroParticles:React.FC = () => {
     []
   );
   return (
-
     <Particles
       height="100vh"
       id="tsparticles"
@@ -34,10 +33,9 @@ const HeroParticles:React.FC = () => {
         left: 0,
         right: 0,
       }}
-      
       options={{
         fullScreen: { zIndex: -1, enable: false },
-        fps_limit: 120,
+        fps_limit: 60,
         particles: {
           number: {
             value: 80,
@@ -148,8 +146,7 @@ const HeroParticles:React.FC = () => {
         retina_detect: true,
       }}
     />
-    
   );
-}
+};
 
 export default HeroParticles;

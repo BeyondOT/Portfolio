@@ -31,26 +31,28 @@ const Projects = () => {
         >
           <SwiperSlide>
             <ProjectCard
-              title="First Project"
-              content="This is my first project. It does this and that."
+              title="Clipped"
+              content="Clipped is a user-friendly app for gamers to upload, edit and share their gameplay highlights with friends and the wider gaming community."
+              link="https://github.com/BeyondOT/Clipped-MERN"
             />
           </SwiperSlide>
           <SwiperSlide>
             <ProjectCard
-              title="Second Project"
-              content="This is my second prch and Im proudxwsqdgqs dgqsqsdqsdghd qhqdhsdqsht. It does this and that."
+              title="Miracle Morning"
+              content="Miracle Morning is an app that helps you wake up early and stay motivated by tracking your progress."
+              link="https://github.com/BeyondOT/MiracleMorning"
             />
           </SwiperSlide>
           <SwiperSlide>
             <ProjectCard
               title="Third Project"
-              content="This is my third project. It does this and that."
+              content="Work in progress..."
             />
           </SwiperSlide>
           <SwiperSlide>
             <ProjectCard
               title="Fourth Project"
-              content="This is my Fourth project. It does this and that."
+              content="Work in progress..."
             />
           </SwiperSlide>
         </Swiper>
