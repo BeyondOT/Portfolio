@@ -47,10 +47,10 @@ const Projects = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-            <ProjectCard title="Third Project" content="Work in progress..." />
+            <ProjectCard title="3rd Project" content="Work in progress..." />
           </SwiperSlide>
           <SwiperSlide>
-            <ProjectCard title="Fourth Project" content="Work in progress..." />
+            <ProjectCard title="4th Project" content="Work in progress..." />
           </SwiperSlide>
         </Swiper>
       </div>
