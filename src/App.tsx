@@ -16,8 +16,6 @@ function App() {
     const loader = document.getElementById("loader");
     loader?.setAttribute("class", "loader closed");
     loader?.addEventListener("animationend", () => {
-      console.log("here");
-
       loader.remove();
     });
   }, []);
@@ -33,9 +31,9 @@ function App() {
         <HeroParticles />
         <Hero />
         <About />
-        
+
         <Projects />
-        <Contact/>
+        <Contact />
         <Footer />
       </div>
     </div>
