@@ -16,6 +16,7 @@ function App() {
     const loader = document.getElementById("loader");
     loader?.setAttribute("class", "loader closed");
     loader?.addEventListener("animationend", () => {
+      
       loader.remove();
     });
   }, []);
